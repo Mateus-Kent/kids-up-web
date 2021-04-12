@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.header {
+  background-color: #fff;
+  height: 180px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  max-width: 315px;
+  max-height: 93px;
+}
+
+.content {
+  height: 200vh;
+  width: 100vw;
+}
+
+.content .intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 50px;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(180deg, #2d9cdb 0%, #2f80ed 100%);
+  width: 100%;
+  height: 50%;
+}
+
+.content .intro span {
+  width: 464px;
+}
+
+.content .download {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 56px;
+  font-weight: 700;
+}
+
+.imageParents {
+  max-width: 600px;
+  max-height: 600px;
+}
+
+.downloadButtons {
+  display: flex;
+}
+
+.container .downloadButtons .androidDownload {
+  width: 90px;
+  height: 90px;
+  background: #30e462;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 13px;
+}
+
+.container .downloadButtons .appleDonload {
+  width: 90px;
+  height: 90px;
+  background: linear-gradient(180deg, #000000 0%, rgba(29, 29, 29, 0.84) 100%);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 13px;
+}
+
+.container .downloadButtons .androidDownload a {
+  font-size: 46px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.container .downloadButtons .appleDonload a {
+  font-size: 45px;
+  text-decoration: none;
+  color: #fff;
+}
+
+footer {
+  width: 100vw;
+  height: 310px;
+  background: linear-gradient(180deg, #2d9cdb 0%, #2f80ed 100%);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  color: #fff;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+footer .networks {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .networks .links {
+  display: flex;
+  align-items: center;
+  column-gap: 24px;
+} 
+
+
+
+footer .networks .links .networks-links {
+   text-decoration: none; 
+}
+
+footer .speak{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+footer .speak a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 700;
+}
