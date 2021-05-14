@@ -13,7 +13,7 @@ body {
 
 .header {
   background-color: #fff;
-  height: 180px;
+  height: 80px;
   width: 100vw;
   display: flex;
   align-items: center;
@@ -21,8 +21,9 @@ body {
 }
 
 .logo {
-  max-width: 315px;
-  max-height: 93px;
+    margin-left: -70vw;
+    max-width: 315px;
+    max-height: 50px;
 }
 
 .content {
