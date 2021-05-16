@@ -30,7 +30,15 @@ body {
 }
 
 
-.login {
+#buttons{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 24px;
+}
+
+.signup{
+  font-size: 14px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -42,6 +50,27 @@ body {
   font-weight: 600;
   border-radius: 12px;
   background: var(--blue);
+}
+
+.signup:hover{
+  background: #114B5F;
+}
+
+.login{
+  border: 1px solid  #2D9CDB;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 120px;
+  text-decoration: none;
+  color: #2D9CDB;
+}
+
+.login:hover{
+  background: #114B5F;
+  color: #fff;
 }
 
 .content {
@@ -88,8 +117,9 @@ body {
   display: flex;
 }
 
+
 .container span {
-  font-size: 50px;
+  font-size: 42px;
 }
 
 .container .downloadButtons .androidDownload {
@@ -136,7 +166,7 @@ footer {
   justify-content: space-evenly;
 
   color: #fff;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 700;
 }
 
@@ -163,6 +193,6 @@ footer .speak {
 footer .speak a {
   color: #fff;
   text-decoration: none;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 700;
 }
