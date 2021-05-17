@@ -17,9 +17,17 @@ body {
 
   height: 100vh;
   width: 612px;
-  display: flex;
+  display: block;
   align-items: center;
   justify-content: center;
+}
+
+#image-logo{
+  height: 100px;
+}
+
+#image-baby{
+  height: 550px;
 }
 
 img {
@@ -34,6 +42,7 @@ img {
   align-items: center;
   justify-content: center;
 }
+
 
 h1 {
   color: #2d9cdb;

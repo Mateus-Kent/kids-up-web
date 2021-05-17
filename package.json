@@ -1,0 +1,26 @@
+{
+  "name": "kids-up-web",
+  "version": "1.0.0",
+  "description": "Presentation of Kid's u",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "nodemon ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mateus-Kent/kids-up-web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Mateus-Kent/kids-up-web/issues"
+  },
+  "homepage": "https://github.com/Mateus-Kent/kids-up-web#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
