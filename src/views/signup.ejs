@@ -22,7 +22,8 @@
 
   <div id="content">
     <div id="form-container">
-      <form>
+
+      <form id="formRegister" name="formRegister" method="post" action="/signup"> 
         <h1>Cadastre-se</h1>
 
         <br />
@@ -51,7 +52,7 @@
 
         <br />
 
-        <button>Criar conta</button>
+        <button onClick="Form.submit(event)" form="formRegister" >Criar conta</button>
       </form>
 
       <br />
@@ -59,6 +60,9 @@
       <a href="/login">Já tenho uma conta</a>
     </div>
   </div>
+
+<script src="/scripts/auth.js"></script>
+
 </body>
 
 </html>
