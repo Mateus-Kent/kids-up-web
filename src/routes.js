@@ -13,6 +13,7 @@ routes.post('/signup', (req , res) => {
   
   parent.push({
     email: req.body.email,
+    phone: req.body.phone,
     password: req.body.password,
     username: req.body.username,
   })
