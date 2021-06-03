@@ -1,5 +1,6 @@
 const express = require("express");
 const routes = express.Router();
+const error = require('../middleware/pageError');
 
 // routes.get("/", async (req, res) => {
 //    const parent = [];
@@ -29,6 +30,6 @@ routes.get("/login", (req, res) => res.render("login"));
 
 routes.get("/edit-profile", (req, res) => res.render("edit-profile"));
 
-routes.get("/error", (req, res) => res.render("error"));
+routes.use(error)
 
 module.exports = routes;
