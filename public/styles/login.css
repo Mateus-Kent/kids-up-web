@@ -17,13 +17,15 @@ body {
 
   height: 100vh;
   width: 612px;
-  display: block;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
 #image-logo{
   height: 100px;
+  width: 352px;
 }
 
 #image-baby{
