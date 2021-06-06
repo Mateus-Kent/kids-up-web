@@ -23,9 +23,8 @@ body {
 }
 
 img {
-  width: 100%;
-
-  max-width: 503px;
+  width: 340px;
+  height: 370px;
 }
 
 #content {
