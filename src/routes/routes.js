@@ -11,6 +11,8 @@ const error = require('../middleware/pageError');
 //   return res.render("index");
 // });
 
+const parent = []
+
 routes.get("/", (req, res) => res.render("index"));
 
 routes.get("/signup", (req, res) => res.render("signup"));
