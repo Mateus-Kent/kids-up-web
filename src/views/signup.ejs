@@ -17,7 +17,7 @@
 
 <body>
   <div id="logo">
-     <h1 id="appName">Kid's up</h1>
+    <h1 id="appName">Kid's up</h1>
 
     <img src="/images/Child.svg" alt="logo" />
   </div>
@@ -25,51 +25,42 @@
   <div id="content">
     <div id="form-container">
 
-      <form id="formRegister" name="formRegister" method="post" action="/signup"> 
-        <h1>Cadastre-se</h1>
-
-        <br />
-
-        <div class="input-container">
-          <input type="text" placeholder="Email" id="email" name="email" required />
-        </div>
-
-        <br />
-
-        <div class="input-container">
-          <input type="text" placeholder="numero de telefone" id="phone" name="phone" required />
-        </div>
-
-        <br />
-
-        <div class="input-container">
-          <input type="password" placeholder="Senha" id="password" name="password" required />
-        </div>
-
-        <br />
-
-        <div class="input-container">
-          <input type="password" placeholder="Confirme sua senha" id="confirm" name="confirm" required />
-        </div>
-
-        <br />
-
-        <div class="input-container">
-          <input type="text" id="username" placeholder="Nome de usuário" name="username" required />
-        </div>
-
-        <br />
-
-        <button onClick="Form.submit(event)" form="formRegister" >Criar conta</button>
-      </form>
+      <form id="formRegister" name="formRegister" method="post" action="/signup">
+      <h1>Cadastre-se</h1>
 
       <br />
+
+      <div class="input-container">
+        <input type="text" placeholder="Email" id="email" name="email" required />
+      </div>
+
+      <div class="input-container">
+        <input type="text" placeholder="numero de telefone" id="phone" name="phone" required />
+      </div>
+
+      <div class="input-container">
+         <input type="password" placeholder="Senha" id="password" name="password" required />
+      </div>
+
+      <div class="input-container">
+        <input type="password" placeholder="Confirme sua senha" id="confirm" name="confirm" required />
+      </div>
+
+      <div class="input-container">
+        <input type="text" id="username" placeholder="Nome de usuário" name="username" required />
+      </div>
+
+
+      <button onClick="Form.submit(event)" form="formRegister">Criar conta</button>
+    </form>
+
+    <br />
 
       <a href="/login">Já tenho uma conta</a>
     </div>
   </div>
 
-<script src="/scripts/form.js"></script>
+  <script src="/scripts/form.js"></script>
 
 </body>
 
