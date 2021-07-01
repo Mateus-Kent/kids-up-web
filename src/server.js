@@ -11,4 +11,4 @@ server.use(express.static("public"));
 server.use(express.urlencoded({ extended: true }));
 
 server.use(routes);
-server.listen(3001, () => console.log("rodando"));
+server.listen(3001, () => console.log("✨Running on localhost:3001✨"));
