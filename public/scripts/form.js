@@ -1,12 +1,15 @@
 const Form = {
   phoneInput: document.querySelector("#phone"),
   submit: (event) => {
-    Form.phoneInput.value = Form.destroyPhoneMask(Form.phoneInput.value);
+    if(Form.checkHasNotTypedField()) {
+      return;
+    }
     if (!Form.checkPassword()) {
       event.preventDefault();
       alert("As senhas não estão iguais, digite novamente");
       return;
     }
+    Form.phoneInput.value = Form.destroyPhoneMask(Form.phoneInput.value);
   },
   checkPassword: () => {
     const password = document.querySelector("#password").value;
@@ -25,14 +28,18 @@ const Form = {
     return value.replace(/\D/g, "");
   },
 
+  checkHasNotTypedField: () => {
+    const inputList = [...document.querySelectorAll(".input-field")];
+    return inputList.filter((input) => !input.value).length > 0;
+  },
+
   registerEvents: () => {
-    const phone =  Form.phoneInput;
+    const phone = Form.phoneInput;
 
     phone.addEventListener("keypress", () => {
-    phone.value = Form.createPhoneMask(phone.value);
+      phone.value = Form.createPhoneMask(phone.value);
     });
   },
 };
-
 
 Form.registerEvents();
