@@ -2,6 +2,7 @@
  <img id="header" src="./Header.svg" >
 
  # Kids Up Web
+ ### Kids Up is an app that facilitates the communication of parents and caregivers in a day care center
 
  ## 💻 Preview
 
