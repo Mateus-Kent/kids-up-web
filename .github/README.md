@@ -6,9 +6,9 @@
 
  ## 💻 Preview
 
-  <img id="previewIndex" src="./previewIndexScreen.svg" height=600px >
-  <img id="previewIndex" src="./signUpScreen.svg" height=609px >
-  <img id="previewIndex" src="./loginScreen.svg" height=609px >
+  <img id="previewIndex" src="./images/previewIndexScreen.svg" height=600px >
+  <img id="previewIndex" src="./images/signUpScreen.svg" height=609px >
+  <img id="previewIndex" src="./images/loginScreen.svg" height=609px >
 
  ## 👨‍💻 This project was developed with the following technologies:
  <img align="left" alt="react" width="36px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" />
