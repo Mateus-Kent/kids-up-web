@@ -1,15 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
-
-:root {
-  --blue: linear-gradient(180deg, #2d9cdb 0%, #2f80ed 100%);
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
 
 body {
   overflow-x: hidden;
@@ -50,15 +38,17 @@ body {
   color: #fff;
   font-weight: 600;
   border-radius: 12px;
-  background: var(--blue);
+  background: #2f80ed;
+
+  transition: filter 0.3s;
 }
 
 .signup:hover{
-  background: #114B5F;
+  filter: brightness(0.85)
 }
 
 .login{
-  border: 1px solid  #2D9CDB;
+  border: 1px solid  #2f80ed;
   border-radius: 12px;
   display: flex;
   align-items: center;
@@ -66,11 +56,14 @@ body {
   height: 40px;
   width: 120px;
   text-decoration: none;
-  color: #2D9CDB;
+  font-weight: 600;
+  color: #2f80ed;
+
+  transition: background 0.2s;
 }
 
 .login:hover{
-  background: #114B5F;
+  background: #247bee;
   color: #fff;
 }
 
@@ -86,7 +79,7 @@ body {
   font-size: 50px;
   font-weight: 700;
   color: #fff;
-  background: var(--blue);
+  background: var(--primary-color);
   width: 100%;
   height: 50%;
 }
@@ -160,7 +153,7 @@ body {
 footer {
   width: 100vw;
   height: 310px;
-  background: var(--blue);
+  background: var(--primary-color);
 
   display: flex;
   align-items: center;
