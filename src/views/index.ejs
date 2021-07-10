@@ -10,7 +10,8 @@
   <link rel="icon" href="/images/flaticon.ico" />
 
   <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
-  
+
+  <link rel="stylesheet" href="/styles/global.css" />
   <link rel="stylesheet" href="/styles/index.css" />
 </head>
 
@@ -20,14 +21,20 @@
   <header class="header">
     <img src="/images/logo.png" alt="logo" class="logo" />
 
-    <%  if(!parent) { %> 
-    <div id="buttons">
-    <a class="signup" href="/signup">Cadastre-se</a>
+    <% if(!parent) { %>
+      <div id="buttons">
+        <a class="signup" href="/signup">Cadastre-se</a>
 
-    <a class="login" href="/login">Entrar</a>
-     
-  </div>
-  <% } %> 
+        <a class="login" href="/login">Entrar</a>
+
+      </div>
+
+      <% } else { %>
+        <a href="/edit-profile">
+          <%= parent.username %>
+        </a>
+        <% } %>
+
   </header>
 
   <!---Introdução do app --->

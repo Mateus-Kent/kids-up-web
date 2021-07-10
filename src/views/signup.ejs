@@ -10,7 +10,8 @@
 
   <link rel="icon" href="images/flaticon.ico" />
 
-  <link rel="stylesheet" href="styles/signup.css" />
+  <link rel="stylesheet" href="/styles/global.css" />
+  <link rel="stylesheet" href="/styles/signup.css" />
 
   <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
 </head>
@@ -26,35 +27,36 @@
     <div id="form-container">
 
       <form id="formRegister" name="formRegister" method="post" action="/signup">
-      <h1>Cadastre-se</h1>
+        <h1>Cadastre-se</h1>
+
+        <br />
+
+        <div class="input-container">
+          <input type="text" class="input-field" placeholder="Email" id="email" name="email" required />
+        </div>
+
+        <div class="input-container">
+          <input type="text" class="input-field" placeholder="numero de telefone" id="phone" name="phone" required />
+        </div>
+
+        <div class="input-container">
+          <input type="password" class="input-field" placeholder="Senha" id="password" name="password" required />
+        </div>
+
+        <div class="input-container">
+          <input type="password" class="input-field" placeholder="Confirme sua senha" id="confirm" name="confirm"
+            required />
+        </div>
+
+        <div class="input-container">
+          <input type="text" class="input-field" id="username" placeholder="Nome de usuário" name="username" required />
+        </div>
+
+
+        <button onClick="Form.submit(event)" form="formRegister">Criar conta</button>
+      </form>
 
       <br />
-
-      <div class="input-container">
-        <input type="text" class="input-field" placeholder="Email" id="email" name="email" required />
-      </div>
-
-      <div class="input-container">
-        <input type="text" class="input-field" placeholder="numero de telefone" id="phone" name="phone" required />
-      </div>
-
-      <div class="input-container">
-         <input type="password" class="input-field" placeholder="Senha" id="password" name="password" required />
-      </div>
-
-      <div class="input-container">
-        <input type="password" class="input-field" placeholder="Confirme sua senha" id="confirm" name="confirm" required />
-      </div>
-
-      <div class="input-container">
-        <input type="text" class="input-field" id="username" placeholder="Nome de usuário" name="username" required />
-      </div>
-
-
-      <button onClick="Form.submit(event)" form="formRegister">Criar conta</button>
-    </form>
-
-    <br />
 
       <a href="/login">Já tenho uma conta</a>
     </div>

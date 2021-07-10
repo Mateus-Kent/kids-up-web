@@ -1,7 +1,7 @@
 const Form = {
   phoneInput: document.querySelector("#phone"),
   submit: (event) => {
-    if(Form.checkHasNotTypedField()) {
+    if (Form.checkHasNotTypedField()) {
       return;
     }
     if (!Form.checkPassword()) {
@@ -21,7 +21,7 @@ const Form = {
     return value
       .replace(/\D/g, "")
       .replace(/(\d{2})(\d)/, "($1) $2")
-      .replace(/(\d{5})(\d{4})(\d)/, "$1-$2");
+      .replace(/(\d{5})(\d{3})(\d)/, "$1-$2");
   },
 
   destroyPhoneMask: (value) => {
@@ -36,7 +36,7 @@ const Form = {
   registerEvents: () => {
     const phone = Form.phoneInput;
 
-    phone.addEventListener("keypress", () => {
+    phone.addEventListener("change", () => {
       phone.value = Form.createPhoneMask(phone.value);
     });
   },

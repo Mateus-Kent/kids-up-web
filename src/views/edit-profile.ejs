@@ -9,6 +9,7 @@
 
   <link rel="icon" href="/images/flaticon.ico" />
 
+  <link rel="stylesheet" href="/styles/global.css" />
   <link rel="stylesheet" href="/styles/editProfile.css" />
 
 </head>
@@ -26,24 +27,25 @@
 
     <form>
 
-    <h1 id="Edit-profile">Editar Perfil</h1>
+      <h1 id="Edit-profile">Editar Perfil</h1>
 
-    
-    <div>
-      <img id="ProfilePic" src="/images/ProfilePic.svg" alt="Foto de perfil">
-    </div>
+
+      <div>
+        <img id="ProfilePic" src="/images/ProfilePic.svg" alt="Foto de perfil">
+      </div>
 
       <br>
 
       <div class="input-field">
         <label for="Username">Nome de usuário</label> <br>
-        <input type="text" placeholder="Username" id="username" name="username">
+        <input type="text" value="<%= parent.username %>" placeholder="Username" id="username" name="username">
       </div>
 
 
       <div class="input-field">
-        <label for="Email">Numero de telefone</label> <br>
-        <input type="text" placeholder="Numero de telefone" id="username" name="username">
+        <label for="phone">Numero de telefone</label> <br>
+        <input type="text" value="<%= parent.phone_number %>" placeholder="Numero de telefone" id="username"
+          name="username">
       </div>
 
       <div class="input-field">
@@ -51,12 +53,12 @@
         <input type="password" placeholder="password" id="password" name="password">
       </div>
 
-    <div id="buttons">
-      <button id="save">Salvar alterações</button> 
+      <div id="buttons">
+        <button id="save">Salvar alterações</button>
 
-      <button id="delete">Deletar conta</button>
+        <button id="delete">Deletar conta</button>
 
-    </div>
+      </div>
 
     </form>
 
