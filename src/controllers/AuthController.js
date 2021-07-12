@@ -25,7 +25,7 @@ module.exports = {
         }),
       });
       const data = Object.entries(await response.json());
-      req.session.user = { parent: { ...data[0][1] } };
+      res.cookie('token' , data[1][1]);
 
       return res.redirect("/");
     } catch (error) {
