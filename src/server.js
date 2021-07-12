@@ -1,5 +1,6 @@
 const express = require("express");
 const session = require("express-session");
+const cookieParser = require('cookie-parser')
 
 const routes = require("./routes/routes");
 
@@ -14,11 +15,7 @@ server.use(express.static("public"));
 server.use(express.urlencoded({ extended: true }));
 
 server.use(
-  session({
-    secret: "secret",
-    resave: false,
-    saveUninitialized: false,
-  })
+  cookieParser()
 );
 
 server.use(routes);
