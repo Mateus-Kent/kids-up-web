@@ -36,7 +36,7 @@ const Form = {
   registerEvents: () => {
     const phone = Form.phoneInput;
 
-    phone.addEventListener("change", () => {
+    phone.addEventListener("keypress", () => {
       phone.value = Form.createPhoneMask(phone.value);
     });
   },
