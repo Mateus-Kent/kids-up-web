@@ -29,8 +29,6 @@
 
 ## Installation
 
-You will need some tools to run the project locally. If you just want to access the site, see the topic [Usage](#usage)
-
 ### GIT
 
 - Install git on your machine: https://git-scm.com/downloads
