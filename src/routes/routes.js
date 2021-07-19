@@ -17,6 +17,8 @@ routes.post("/signup", AuthController.register);
 
 routes.get("/login", AuthController.loginView);
 
+routes.post("/login", AuthController.login);
+
 routes.get("/edit-profile", authMiddleware, ProfileController.editProfileView);
 
 routes.use(pageNotFoundMiddleware);
