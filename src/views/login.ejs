@@ -27,19 +27,19 @@
   <div id="content">
     <div id="forms-container">
 
-      <form id="form-login">
+      <form id="form-login" name="form-login" method="post" action="/login"> 
         <h1 id="loged">Login</h1>
 
         <div class="input-container">
-          <input type="text" placeholder="Email" id="email" name="email" required />
+          <input class="input-field" type="text" placeholder="Email" id="email" name="email" required />
         </div>
 
         <div class="input-container">
-          <input type="password" placeholder="Senha" id="password" name="password" required />
+          <input class="input-field" type="password" placeholder="Senha" id="password" name="password" required />
         </div>
 
 
-        <button type="submit" form="form-login">Entrar</button>
+        <button onClick="AuthForm.submit(event)" type="submit"  form="form-login">Entrar</button>
       </form>
 
       <br>
@@ -47,6 +47,9 @@
       <a href="login.html">Esqueci minha senha</a>
     </div>
   </div>
+
+  <script src="/scripts/authForm.js"></script>
+
 </body>
 
 </html>
