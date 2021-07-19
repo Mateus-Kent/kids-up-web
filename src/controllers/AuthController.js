@@ -33,4 +33,28 @@ module.exports = {
       return res.status(400).end();
     }
   },
+
+  async login(req, res) {
+    const { email, password } = req.body;
+
+    try {
+      const response = await fetcher("/auth", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email,
+          password,
+        }),
+      });
+      console.log(response.status)
+      const data = Object.entries(await response.json());
+      res.cookie('token' , data[1][1]);
+      return res.redirect("/");
+    } catch (error) {
+      console.log(error);
+      return res.status(401).end();
+    }
+  },
 };
