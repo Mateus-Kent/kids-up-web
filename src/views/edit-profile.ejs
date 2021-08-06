@@ -25,7 +25,7 @@
 
   <div id="Edit">
 
-    <form>
+    <form id="formUpdate" onSubmit="ProfileForm.submit(event)">
 
       <h1 id="Edit-profile">Editar Perfil</h1>
 
@@ -37,24 +37,19 @@
       <br>
 
       <div class="input-field">
-        <label for="Username">Nome de usuário</label> <br>
-        <input type="text" value="<%= parent.username %>" placeholder="Username" id="username" name="username">
+        <label for="username">Nome de usuário</label> <br>
+        <input type="text" value="<%= parent.username %>" placeholder="Username" id="username" class="form-input" name="username">
       </div>
 
 
       <div class="input-field">
-        <label for="phone">Numero de telefone</label> <br>
-        <input type="text" value="<%= parent.phone_number %>" placeholder="Numero de telefone" id="username"
-          name="username">
-      </div>
-
-      <div class="input-field">
-        <label for="Password">Senha</label> <br>
-        <input type="password" placeholder="password" id="password" name="password">
+        <label for="phone">Número de telefone</label> <br>
+        <input type="text" value="<%= parent.phone_number %>" placeholder="Numero de telefone" class="form-input" id="phone_number"
+          name="phone_number">
       </div>
 
       <div id="buttons">
-        <button id="save">Salvar alterações</button>
+        <button id="save" type="submit" >Salvar alterações</button>
 
         <button id="delete">Deletar conta</button>
 
@@ -64,6 +59,7 @@
 
   </div>
 
+  <script src="/scripts/formProfile.js"></script>
 
 </body>
 

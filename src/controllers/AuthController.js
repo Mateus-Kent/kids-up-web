@@ -48,12 +48,12 @@ module.exports = {
           password,
         }),
       });
-      console.log(response.status)
       const data = Object.entries(await response.json());
       res.cookie('token' , data[1][1]);
+      console.log("logou")
       return res.redirect("/");
     } catch (error) {
-      console.log(error);
+      console.log("erro", error);
       return res.status(401).end();
     }
   },

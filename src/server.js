@@ -21,5 +21,5 @@ server.use(
 server.use(routes);
 
 server.listen(3001, () =>
-  console.log("✨ KIDS UP (API) > Running on localhost:3001 ✨")
+  console.log("✨ KIDS UP (WEB) > Running on localhost:3001 ✨")
 );

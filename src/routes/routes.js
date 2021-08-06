@@ -21,6 +21,8 @@ routes.post("/login", AuthController.login);
 
 routes.get("/edit-profile", authMiddleware, ProfileController.editProfileView);
 
+routes.post("/edit-profile", ProfileController.updateProfile);
+
 routes.use(pageNotFoundMiddleware);
 
 module.exports = routes;

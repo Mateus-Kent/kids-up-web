@@ -15,7 +15,6 @@ module.exports = async function authMiddle(req, res, next) {
 
   try {
     const parent = await jwt.verify(token, "secret");
-    console.log(parent);
   } catch (error) {
     res.clearCookie("token");
     return res.redirect("/signup");
