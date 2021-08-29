@@ -1,14 +1,14 @@
  
- <img id="header" src="./images/Header.svg" >
+ <img id="header" src="./.github/images/Header.svg" >
 
  # Kids Up Web
  ### Kids Up is an app that facilitates the communication of parents and caregivers in a day care center
 
  ## 💻 Preview
 
-  <img id="previewIndex" src="./images/previewIndexScreen.svg" height=600px >
-  <img id="previewIndex" src="./images/signUpScreen.svg" height=609px >
-  <img id="previewIndex" src="./images/loginScreen.svg" height=609px >
+  <img id="previewIndex" src="./.github/images/previewIndexScreen.svg" height=600px >
+  <img id="previewIndex" src="./.github/images/signUpScreen.svg" height=609px >
+  <img id="previewIndex" src="./.github/images/loginScreen.svg" height=609px >
 
  ## 👨‍💻 This project was developed with the following technologies:
  <img align="left" alt="react" width="36px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" />
