@@ -26,6 +26,20 @@ body {
   cursor: pointer;
 }
 
+
+.username{
+  color: #000;
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.username > span{
+  color: #2f80ed;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
 .signup{
   font-size: 14px;
   display: flex;
